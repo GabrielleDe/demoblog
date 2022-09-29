@@ -83,7 +83,12 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
+        ],
+        "compile": [
+            "phph bin/console doctrine:migrations:migrate --no-interaction"
         ]
+
+        
     },
     "conflict": {
         "symfony/symfony": "*"
